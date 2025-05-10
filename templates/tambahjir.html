@@ -1,0 +1,112 @@
+<!-- Template untuk tambahjir.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    crossorigin="anonymous" />
+  <title>Tambah Mahasiswa</title>
+</head>
+
+<body>
+  <div class="container my-5">
+    <h3 class="mb-4">Tambah Mahasiswa</h3>
+    <form method="post" action="index.php">
+      <div class="form-group">
+        <label>NIM</label>
+        <input type="text" name="nim" class="form-control" placeholder="Masukkan NIM" required>
+      </div>
+      <div class="form-group">
+        <label>Nama</label>
+        <input type="text" name="nama" class="form-control" placeholder="Masukkan Nama" required>
+      </div>
+      <div class="form-group">
+        <label>Tempat Lahir</label>
+        <input type="text" name="tempat" class="form-control" placeholder="Masukkan Tempat Lahir" required>
+      </div>
+      <div class="form-group">
+        <label>Tanggal Lahir</label>
+        <input type="date" name="tl" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label>Gender</label>
+        <select name="gender" class="form-control" required>
+          <option value="">Pilih Gender</option>
+          <option value="Laki-laki">Laki-laki</option>
+          <option value="Perempuan">Perempuan</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" class="form-control" placeholder="Masukkan Email" required>
+      </div>
+      <div class="form-group">
+        <label>No. Telp</label>
+        <input type="text" name="telp" class="form-control" placeholder="Masukkan Nomor Telepon" required>
+      </div>
+      <button type="submit" class="btn btn-primary" name="add">Simpan</button>
+      <a href="index.php" class="btn btn-secondary">Batal</a>
+    </form>
+  </div>
+</body>
+
+</html>
+
+<!-- Template untuk editjir.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    crossorigin="anonymous" />
+  <title>Edit Mahasiswa</title>
+</head>
+
+<body>
+  <div class="container my-5">
+    <h3 class="mb-4">Edit Mahasiswa</h3>
+    <form method="post" action="index.php">
+      <input type="hidden" name="id" value="DATA_ID" class="form-control">
+
+      <div class="form-group">
+        <label>NIM</label>
+        <input type="text" name="nim" class="form-control" value="DATA_nim" required>
+      </div>
+      <div class="form-group">
+        <label>Nama</label>
+        <input type="text" name="nama" class="form-control" value="DATA_nama" required>
+      </div>
+      <div class="form-group">
+        <label>Tempat Lahir</label>
+        <input type="text" name="tempat" class="form-control" value="DATA_tempat" required>
+      </div>
+      <div class="form-group">
+        <label>Tanggal Lahir</label>
+        <input type="date" name="tl" class="form-control" value="DATA_tl" required>
+      </div>
+      <div class="form-group">
+        <label>Gender</label>
+        <select name="gender" class="form-control" required>
+          <option value="Laki-laki" DATA_gender_laki>Laki-laki</option>
+          <option value="Perempuan" DATA_gender_perempuan>Perempuan</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" class="form-control" value="DATA_email" required>
+      </div>
+      <div class="form-group">
+        <label>No. Telp</label>
+        <input type="text" name="telp" class="form-control" value="DATA_telp" required>
+      </div>
+      <button type="submit" class="btn btn-primary" name="update">Update</button>
+      <a href="index.php" class="btn btn-secondary">Batal</a>
+    </form>
+  </div>
+</body>
+
+</html>
