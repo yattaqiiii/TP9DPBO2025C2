@@ -186,5 +186,6 @@ Jika operasi CRUD tidak berfungsi, periksa hal-hal berikut:
    - Gunakan penamaan yang konsisten dan deskriptif
 
 ---
+[text](<rikord bukti wak.mkv>)
 
 Framework MVP PHP ini dibuat sebagai contoh implementasi pola arsitektur MVP dalam pengembangan aplikasi web PHP. Framework ini cocok untuk proyek kecil hingga menengah yang membutuhkan struktur yang rapi dan terorganisir.
